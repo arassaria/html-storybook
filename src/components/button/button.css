@@ -36,3 +36,29 @@
   max-width: 11px;
   max-height: 13px;
 }
+
+.btn-share {
+  border-radius: 12px;
+  background: none;
+  border: 1px solid #ffffff;
+  color: white;
+  width: 75px;
+  height: 23px;
+  padding-left: 20px;
+  padding-right: 16px;
+}
+
+.btn-share > img {
+  max-width: 11px;
+  max-height: 13px;
+}
+
+.share {
+  max-width: 60px;
+  max-height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 8px;
+  letter-spacing: 0.16px;
+}
