@@ -7,9 +7,6 @@
 
 .gradient-bg {
   border: none;
-  background: transparent
-    linear-gradient(180deg, var(#ed8770) 0%, var(D9519D) 100%) 0% 0% no-repeat
-    padding-box;
   background: transparent linear-gradient(180deg, #ed8770 0%, #d9519d 100%) 9%
     0% no-repeat padding-box;
 }
