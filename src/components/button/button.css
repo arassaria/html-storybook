@@ -6,3 +6,27 @@
   border: none;
   padding: 10px 20px;
 }
+
+.btn-play {
+  border-radius: 12px;
+  background: transparent
+    linear-gradient(180deg, var(#ed8770) 0%, var(D9519D) 100%) 0% 0% no-repeat
+    padding-box;
+  background: transparent linear-gradient(180deg, #ed8770 0%, #d9519d 100%) 9%
+    0% no-repeat padding-box;
+  border: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 5px;
+  padding-bottom: 7px;
+  padding-right: 21px;
+  padding-left: 20px;
+}
+
+.btn-play > img {
+  padding-right: 8px;
+  padding-top: 2px;
+}
