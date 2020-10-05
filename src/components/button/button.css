@@ -1,64 +1,27 @@
 .btn {
-  border-radius: 20px;
-  font-size: 1.2rem;
+  border-radius: 12px;
+  background: none;
+  border: 1px solid #ffffff;
   color: white;
-  background: #016b6b;
-  border: none;
-  padding: 10px 20px;
 }
 
-.btn-play {
-  border-radius: 12px;
+.gradient-bg {
+  border: none;
   background: transparent
     linear-gradient(180deg, var(#ed8770) 0%, var(D9519D) 100%) 0% 0% no-repeat
     padding-box;
   background: transparent linear-gradient(180deg, #ed8770 0%, #d9519d 100%) 9%
     0% no-repeat padding-box;
-  border: none;
-  color: white;
-  width: 75px;
-  height: 23px;
-  padding-left: 20px;
-  padding-right: 16px;
 }
 
-.play {
-  max-width: 50px;
-  max-height: 20px;
+.button {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  font-size: 8px;
   letter-spacing: 0.16px;
-}
-
-.btn-play > img {
-  max-width: 11px;
-  max-height: 13px;
-}
-
-.btn-share {
-  border-radius: 12px;
-  background: none;
-  border: 1px solid #ffffff;
-  color: white;
-  width: 75px;
-  height: 23px;
-  padding-left: 20px;
-  padding-right: 16px;
-}
-
-.btn-share > img {
-  max-width: 11px;
-  max-height: 13px;
-}
-
-.share {
-  max-width: 60px;
-  max-height: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   font-size: 8px;
-  letter-spacing: 0.16px;
+  padding: 5px 20px;
+}
+
+.button > :first-child {
+  margin-right: 10px;
 }
