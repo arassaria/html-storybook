@@ -16,22 +16,23 @@
     0% no-repeat padding-box;
   border: none;
   color: white;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding-top: 5px;
-  padding-bottom: 7px;
-  padding-right: 20px;
-  padding-left: 19px;
-  height: 23px;
   width: 75px;
+  height: 23px;
+  padding-left: 20px;
+  padding-right: 16px;
+}
+
+.play {
+  max-width: 50px;
+  max-height: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   font-size: 8px;
   letter-spacing: 0.16px;
-  text-align: left;
 }
 
 .btn-play > img {
-  padding-right: 8px;
-  padding-bottom: 5px;
+  max-width: 11px;
+  max-height: 13px;
 }
