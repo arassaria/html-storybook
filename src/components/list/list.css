@@ -1,0 +1,13 @@
+li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  background: #10121d;
+  height: 4rem;
+  width: 25rem;
+  padding-left: 1rem;
+}
+
+li > :first-child {
+  margin-right: 1rem;
+}
