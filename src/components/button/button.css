@@ -6,11 +6,11 @@
   display: flex;
   align-items: center;
   letter-spacing: 0.16px;
-  font-size: 8px;
+  font-size: 0.5rem;
   padding: 5px 20px;
 }
 
-.gradient-bg {
+.btn-primary {
   border: none;
   background: linear-gradient(#ed8770, #d9519d);
 }
