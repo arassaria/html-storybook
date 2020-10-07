@@ -1,4 +1,4 @@
-li {
+.sidebar-li {
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -8,12 +8,12 @@ li {
   padding-left: 1rem;
 }
 
-li > :first-child {
+.sidebar-li > :first-child {
   margin-right: 1rem;
   width: 8%;
 }
 
-hr {
+.sidebar-hr {
   margin: 0;
   width: 83%;
   margin-left: 17%;
