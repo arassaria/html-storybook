@@ -7,4 +7,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #151827;
+}
+
+.nav-primary {
+  color: #d9519d;
 }
