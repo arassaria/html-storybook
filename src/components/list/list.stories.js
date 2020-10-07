@@ -6,6 +6,12 @@ import listEq from "./eq.html";
 import listDrive from "./drive.html";
 import listHiddenFolders from "./hidden-folders.html";
 import listScanMedia from "./scan-media.html";
+import listDisplay from "./display.html";
+import listAudio from "./audio.html";
+import listHeadset from "./headset.html";
+import listLockscreen from "./lockscreen.html";
+import listAdvanced from "./advanced.html";
+import listOther from "./other.html";
 
 export default { title: "Components/List" };
 
@@ -16,3 +22,9 @@ export const eq = () => listEq;
 export const drive = () => listDrive;
 export const hiddenFolders = () => listHiddenFolders;
 export const scanMedia = () => listScanMedia;
+export const Display = () => listDisplay;
+export const Audio = () => listAudio;
+export const Headset = () => listHeadset;
+export const Lockscreen = () => listLockscreen;
+export const Advanced = () => listAdvanced;
+export const Other = () => listOther;
