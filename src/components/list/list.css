@@ -2,7 +2,7 @@ li {
   list-style-type: none;
   display: flex;
   align-items: center;
-  background: #10121d;
+  background: none;
   height: 4rem;
   width: 20rem;
   padding-left: 1rem;
