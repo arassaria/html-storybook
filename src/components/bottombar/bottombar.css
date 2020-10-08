@@ -1,0 +1,16 @@
+.nav-btn {
+  background: none;
+  border: none;
+  color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 10px;
+  min-width: 90px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.nav-btn > :first-child {
+  margin: 0;
+}
