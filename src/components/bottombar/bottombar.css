@@ -1,4 +1,4 @@
-.nav-btn {
+.button--nav {
   background: none;
   border: none;
   color: grey;
@@ -11,6 +11,6 @@
   padding-bottom: 0px;
 }
 
-.nav-btn > :first-child {
+.button--nav > :first-child {
   margin: 0;
 }

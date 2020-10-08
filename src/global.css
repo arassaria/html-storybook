@@ -13,8 +13,8 @@ html {
 body {
   font-family: "Quicksand", sans-serif;
   margin: 0;
-  background-color: #383b49;
-  color: white;
+  background-color: var(--bg-color, white);
+  color: var(--text-color, hotpink);
 }
 
 input,
@@ -24,4 +24,9 @@ optgroup,
 textarea {
   margin: 0;
   font-family: "Quicksand", sans-serif;
+}
+
+:root {
+  --bg-color: #383b49;
+  --text-color: white;
 }
