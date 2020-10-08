@@ -16,6 +16,8 @@
   width: 80%;
   padding-left: 0;
   margin: 0 auto;
+  background: none;
+  list-style-type: none;
 }
 
 .nav-li {
