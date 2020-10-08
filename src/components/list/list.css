@@ -1,19 +1,19 @@
-li {
+.sidebar-li {
   list-style-type: none;
   display: flex;
   align-items: center;
-  background: #10121d;
+  background: none;
   height: 4rem;
   width: 20rem;
   padding-left: 1rem;
 }
 
-li > :first-child {
+.sidebar-li > :first-child {
   margin-right: 1rem;
   width: 8%;
 }
 
-hr {
+.sidebar-hr {
   margin: 0;
   width: 83%;
   margin-left: 17%;
