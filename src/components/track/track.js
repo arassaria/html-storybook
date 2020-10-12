@@ -1,4 +1,4 @@
-import playImage from "../../assets/play-icon.svg";
+import playImage from "../../assets/play2.svg";
 import panikknopfImage from "../../assets/panikknopf.jpg";
 
 export function createTrackElement() {
