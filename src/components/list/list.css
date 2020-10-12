@@ -19,3 +19,25 @@
   margin-left: 17%;
   border: 1px solid grey;
 }
+
+.settings-li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  background: none;
+  height: 3rem;
+  width: 100%;
+}
+
+.settings-li > :first-child {
+  margin-right: 1rem;
+  width: 8%;
+}
+
+.settings-hr {
+  margin: 0;
+  width: 88%;
+  margin-left: 12%;
+  border: 1px solid grey;
+  opacity: 0.3;
+}
