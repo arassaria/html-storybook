@@ -5,20 +5,63 @@ export default {
   parameters: { layout: "centered" },
 };
 
-export const gothic = () => createTrackElement("Gothic", "Panikknopf");
-export const feuer = () => createTrackElement("Feuer", "Panikknopf");
+export const gothic = () =>
+  createTrackElement({
+    title: "Gothic",
+    artist: "Panikknopf",
+    imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
+  });
+export const feuer = () =>
+  createTrackElement({
+    title: "Feuer",
+    artist: "Panikknopf",
+    imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
+  });
 export const sagenAusMädchen = () =>
-  createTrackElement("Sagen aus Mädchen", "Panikknopf");
+  createTrackElement({
+    title: "Sagen Aus Mädchen",
+    artist: "Panikknopf",
+    imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
+  });
 export const wirSindDerKnopf = () =>
-  createTrackElement("Wir sind der Knopf", "Panikknopf");
+  createTrackElement({
+    title: "Wir Sind Der Knopf",
+    artist: "Panikknopf",
+    imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
+  });
 export const sexIstEineMacht = () =>
-  createTrackElement("Sex ist eine Macht", "Panikknopf");
+  createTrackElement({
+    title: "Sex Ist Eine Macht",
+    artist: "Panikknopf",
+    imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
+  });
 export const königinDerMaden = () =>
-  createTrackElement("Königin der Maden", "Panikknopf");
+  createTrackElement({
+    title: "Königin Der Maden",
+    artist: "Panikknopf",
+    imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
+  });
 export const bockAufSex = () =>
-  createTrackElement("Bock auf Sex", "Panikknopf");
+  createTrackElement({
+    title: "Bock Auf Sex",
+    artist: "Panikknopf",
+    imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
+  });
 export const leichenbraut = () =>
-  createTrackElement("Leichenbraut", "Panikknopf");
-export const frei = () => createTrackElement("Frei", "Panikknopf");
+  createTrackElement({
+    title: "Leichenbraut",
+    artist: "Panikknopf",
+    imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
+  });
+export const frei = () =>
+  createTrackElement({
+    title: "Frei",
+    artist: "Panikknopf",
+    imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
+  });
 export const hoffnungAufSchmerz = () =>
-  createTrackElement("Hoffnung auf Schmerz", "Panikknopf");
+  createTrackElement({
+    title: "Hoffnung Auf Schmerz",
+    artist: "Panikknopf",
+    imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
+  });
