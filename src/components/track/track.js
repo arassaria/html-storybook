@@ -24,16 +24,14 @@ export function createTrackElement(track) {
 
   const audioElement = new Audio(track.audioSrc);
 
-  let isPlaying = false;
   btnElement.onclick = () => {
-    if (isPlaying) {
+    if (!audioElement.paused) {
       audioElement.pause();
       setPlayIcon(playElement);
     } else {
       audioElement.play();
       setPauseIcon(playElement);
     }
-    isPlaying = !isPlaying;
   };
   const playElement = document.createElement("img");
   playElement.src = playImage;
