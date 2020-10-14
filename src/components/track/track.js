@@ -1,5 +1,6 @@
 import "./track.css";
 import playImage from "../../assets/play2.svg";
+import pauseImage from "../../assets/pause.svg";
 
 export function createTrackElement(track) {
   const trackElement = document.createElement("div");
@@ -20,8 +21,21 @@ export function createTrackElement(track) {
 
   const btnElement = document.createElement("button");
   btnElement.className = "play-btn";
+
+  const audioElement = new Audio(track.audioSrc);
+
+  let isPlaying = false;
   btnElement.onclick = function () {
-    alert("Click!");
+    if (isPlaying) {
+      audioElement.pause();
+      playElement.src = playImage;
+      playElement.alt = "Play";
+    } else {
+      audioElement.play();
+      playElement.src = pauseImage;
+      playElement.alt = "Pause";
+    }
+    isPlaying = !isPlaying;
   };
   const playElement = document.createElement("img");
   playElement.src = playImage;
