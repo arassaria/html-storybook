@@ -15,77 +15,6 @@ export default {
   parameters: { layout: "centered" },
 };
 
-export const gothic = () =>
-  createTrackElement({
-    title: "Gothic",
-    artist: "Panikknopf",
-    imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
-    audioSrc: gothicAudio,
-  });
-export const feuer = () =>
-  createTrackElement({
-    title: "Feuer",
-    artist: "Panikknopf",
-    imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
-    audioSrc: feuerAudio,
-  });
-export const sagenAusMädchen = () =>
-  createTrackElement({
-    title: "Sagen Aus Mädchen",
-    artist: "Panikknopf",
-    imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
-    audioSrc: samAudio,
-  });
-export const wirSindDerKnopf = () =>
-  createTrackElement({
-    title: "Wir Sind Der Knopf",
-    artist: "Panikknopf",
-    imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
-    audioSrc: wsdkAudio,
-  });
-export const sexIstEineMacht = () =>
-  createTrackElement({
-    title: "Sex Ist Eine Macht",
-    artist: "Panikknopf",
-    imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
-    audioSrc: siemAudio,
-  });
-export const königinDerMaden = () =>
-  createTrackElement({
-    title: "Königin Der Maden",
-    artist: "Panikknopf",
-    imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
-    audioSrc: kdmAudio,
-  });
-export const bockAufSex = () =>
-  createTrackElement({
-    title: "Bock Auf Sex",
-    artist: "Panikknopf",
-    imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
-    audioSrc: basAudio,
-  });
-export const leichenbraut = () =>
-  createTrackElement({
-    title: "Leichenbraut",
-    artist: "Panikknopf",
-    imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
-    audioSrc: leichenbrautAudio,
-  });
-export const frei = () =>
-  createTrackElement({
-    title: "Frei",
-    artist: "Panikknopf",
-    imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
-    audioSrc: freiAudio,
-  });
-export const hoffnungAufSchmerz = () =>
-  createTrackElement({
-    title: "Hoffnung Auf Schmerz",
-    artist: "Panikknopf",
-    imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
-    audioSrc: hasAudio,
-  });
-
 const gothic2 = {
   title: "Gothic",
   artist: "Panikknopf",
@@ -97,10 +26,95 @@ const feuer2 = {
   title: "Feuer",
   artist: "Panikknopf",
   imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
-  audioSrc: gothicAudio,
+  audioSrc: feuerAudio,
 };
 
-const panikknopf = [gothic2, feuer2];
+const sam2 = {
+  title: "Sagen Aus Mädchen",
+  artist: "Panikknopf",
+  imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
+  audioSrc: samAudio,
+};
 
-export const amAnfangGeilerAlsAmEndeGedacht = () =>
-  createTrackElement(panikknopf);
+const wsdk2 = {
+  title: "Wir Sind Der Knopf",
+  artist: "Panikknopf",
+  imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
+  audioSrc: wsdkAudio,
+};
+
+const siem2 = {
+  title: "Sex Ist Eine Macht",
+  artist: "Panikknopf",
+  imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
+  audioSrc: siemAudio,
+};
+
+const kdm2 = {
+  title: "Königin Der Maden",
+  artist: "Panikknopf",
+  imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
+  audioSrc: kdmAudio,
+};
+
+const bas2 = {
+  title: "Bock Auf Sex",
+  artist: "Panikknopf",
+  imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
+  audioSrc: basAudio,
+};
+
+const leichenbraut2 = {
+  title: "Leichenbraut",
+  artist: "Panikknopf",
+  imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
+  audioSrc: leichenbrautAudio,
+};
+
+const frei2 = {
+  title: "Frei",
+  artist: "Panikknopf",
+  imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
+  audioSrc: freiAudio,
+};
+
+const has2 = {
+  title: "Hoffnung Auf Schmerz",
+  artist: "Panikknopf",
+  imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
+  audioSrc: hasAudio,
+};
+
+const panikknopf = [
+  wsdk2,
+  gothic2,
+  feuer2,
+  siem2,
+  sam2,
+  kdm2,
+  bas2,
+  leichenbraut2,
+  frei2,
+  has2,
+];
+
+export const wirSindDerKnopf = () => createTrackElement(panikknopf[0]);
+export const gothic = () => createTrackElement(panikknopf[1]);
+export const feuer = () => createTrackElement(panikknopf[2]);
+export const sexIstEineMacht = () => createTrackElement(panikknopf[3]);
+export const sagenAusMädchen = () => createTrackElement(panikknopf[4]);
+export const königinDerMaden = () => createTrackElement(panikknopf[5]);
+export const bockAufSex = () => createTrackElement(panikknopf[6]);
+export const leichenbraut = () => createTrackElement(panikknopf[7]);
+export const frei = () => createTrackElement(panikknopf[8]);
+export const hoffnungAufSchmerz = () => createTrackElement(panikknopf[9]);
+
+export const album = () => {
+  const container = document.createElement("div");
+  panikknopf.forEach((track) => {
+    const trackElement = createTrackElement(track);
+    container.append(trackElement);
+  });
+
+  return container;
+};
