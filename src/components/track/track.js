@@ -22,26 +22,16 @@ export function createTrackElement(track) {
   const btnElement = document.createElement("button");
   btnElement.className = "play-btn";
 
-  const pauseAudio = () => {
-    (playElement.src = playImage),
-      (playElement.alt = "Play"),
-      audioElement.pause();
-  };
-
-  const playAudio = () => {
-    (playElement.src = pauseImage),
-      (playElement.alt = "Pause"),
-      audioElement.play();
-  };
-
   const audioElement = new Audio(track.audioSrc);
 
   let isPlaying = false;
   btnElement.onclick = () => {
     if (isPlaying) {
-      pauseAudio();
+      audioElement.pause();
+      setPlayIcon(playElement);
     } else {
-      playAudio();
+      audioElement.play();
+      setPauseIcon(playElement);
     }
     isPlaying = !isPlaying;
   };
@@ -54,3 +44,11 @@ export function createTrackElement(track) {
   trackElement.append(trackCoverElement, trackInfoElement, btnElement);
   return trackElement;
 }
+
+const setPlayIcon = (element) => {
+  (element.src = playImage), (element.alt = "Play");
+};
+
+const setPauseIcon = (element) => {
+  (element.src = pauseImage), (element.alt = "Pause");
+};

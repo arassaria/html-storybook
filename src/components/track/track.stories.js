@@ -85,3 +85,22 @@ export const hoffnungAufSchmerz = () =>
     imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
     audioSrc: hasAudio,
   });
+
+const gothic2 = {
+  title: "Gothic",
+  artist: "Panikknopf",
+  imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
+  audioSrc: gothicAudio,
+};
+
+const feuer2 = {
+  title: "Feuer",
+  artist: "Panikknopf",
+  imgSrc: "https://getmetal.club/uploads/posts/2019-11/1574658277_cover.jpg",
+  audioSrc: gothicAudio,
+};
+
+const panikknopf = [gothic2, feuer2];
+
+export const amAnfangGeilerAlsAmEndeGedacht = () =>
+  createTrackElement(panikknopf);
