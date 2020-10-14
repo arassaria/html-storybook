@@ -22,18 +22,26 @@ export function createTrackElement(track) {
   const btnElement = document.createElement("button");
   btnElement.className = "play-btn";
 
+  const pauseAudio = () => {
+    (playElement.src = playImage),
+      (playElement.alt = "Play"),
+      audioElement.pause();
+  };
+
+  const playAudio = () => {
+    (playElement.src = pauseImage),
+      (playElement.alt = "Pause"),
+      audioElement.play();
+  };
+
   const audioElement = new Audio(track.audioSrc);
 
   let isPlaying = false;
-  btnElement.onclick = function () {
+  btnElement.onclick = () => {
     if (isPlaying) {
-      audioElement.pause();
-      playElement.src = playImage;
-      playElement.alt = "Play";
+      pauseAudio();
     } else {
-      audioElement.play();
-      playElement.src = pauseImage;
-      playElement.alt = "Pause";
+      playAudio();
     }
     isPlaying = !isPlaying;
   };
