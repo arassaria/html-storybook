@@ -1,18 +1,46 @@
 import "./track.css";
-// import playImage from "../../assets/play2.svg";
-// import pauseImage from "../../assets/pause.svg";
+import playImage from "../../assets/play2.svg";
+import pauseImage from "../../assets/pause.svg";
 import { createElement } from "../../utils/elements.js";
 
 export function createTrackElement(track) {
+  const audioElement = new Audio(track.audioSrc);
+  const playActionElement = createElement("img", {
+    src: playImage,
+  });
   const trackElement = createElement("div", {
     className: "track",
-    innerText: "Ein Div",
-    onclick: () => alert("Clicked"),
-    childern: [
+    // src: track.imgSrc,
+    // alt: `Image of ${track.artist}`,
+    children: [
       createElement("img", {
         className: "track__cover",
         src: track.imgSrc,
         alt: `Image of ${track.artist}`,
+      }),
+      createElement("div", {
+        className: "track__info",
+        children: [
+          createElement("h3", {
+            innerText: track.title,
+          }),
+          createElement("span", {
+            innerText: track.artist,
+          }),
+        ],
+      }),
+      createElement("button", {
+        className: "play-btn",
+        children: [playActionElement],
+        onclick: () => {
+          if (!audioElement.paused) {
+            audioElement.pause();
+            setPlayIcon(playActionElement);
+          } else {
+            audioElement.play();
+            setPauseIcon(playActionElement);
+          }
+        },
       }),
     ],
   });
@@ -57,10 +85,10 @@ export function createTrackElement(track) {
   // return trackElement;
 }
 
-// const setPlayIcon = (element) => {
-//   (element.src = playImage), (element.alt = "Play");
-// };
+const setPlayIcon = (element) => {
+  (element.src = playImage), (element.alt = "Play");
+};
 
-// const setPauseIcon = (element) => {
-//   (element.src = pauseImage), (element.alt = "Pause");
-// };
+const setPauseIcon = (element) => {
+  (element.src = pauseImage), (element.alt = "Pause");
+};

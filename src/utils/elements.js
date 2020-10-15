@@ -3,7 +3,7 @@ export const createElement = (tagName, props) => {
   const { children, ...otherProps } = props;
   Object.assign(element, otherProps);
   if (children) {
-    element.append(children);
+    element.append(...children);
   }
   return element;
 };
